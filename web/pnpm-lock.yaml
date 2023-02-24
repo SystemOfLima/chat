@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@emotion/react': ^11.10.6
   '@emotion/styled': ^11.10.6
+  '@fontsource/roboto': ^4.5.8
   '@mui/icons-material': ^5.11.9
   '@mui/material': ^5.11.10
   '@types/react': ^18.0.27
@@ -17,6 +18,7 @@ specifiers:
 dependencies:
   '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
   '@emotion/styled': 11.10.6_oouaibmszuch5k64ms7uxp2aia
+  '@fontsource/roboto': 4.5.8
   '@mui/icons-material': 5.11.9_ylmaxqh5wvme7ymgn4ys5vax6u
   '@mui/material': 5.11.10_xqeqsl5kvjjtyxwyi3jhw3yuli
   react: 18.2.0
@@ -394,6 +396,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/roboto/4.5.8:
+    resolution: {integrity: sha512-CnD7zLItIzt86q4Sj3kZUiLcBk1dSk81qcqgMGaZe7SQ1P8hFNxhMl5AZthK1zrDM5m74VVhaOpuMGIL4gagaA==}
+    dev: false
 
   /@mui/base/5.0.0-alpha.118_zula6vjvt3wdocc4mwcxqa6nzi:
     resolution: {integrity: sha512-GAEpqhnuHjRaAZLdxFNuOf2GDTp9sUawM46oHZV4VnYPFjXJDkIYFWfIQLONb0nga92OiqS5DD/scGzVKCL0Mw==}
