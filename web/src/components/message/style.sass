@@ -1,0 +1,32 @@
+@use '../../styles/variables'
+
+.message
+  display: grid
+  
+  .message_title
+    color: variables.$white
+    font-family: variables.$font-roboto
+    font-weight: 400
+
+  .message_body
+    margin-top: 0.625rem
+
+    padding: 0.875rem
+    border-radius: 0 0.5rem 0.5rem 0.5rem
+    width: max-content
+    background-color: variables.$violet-800
+    
+    color: variables.$white
+    font-family: variables.$font-roboto
+    font-weight: 400
+
+  &.sender
+    justify-content: right
+
+    .message_title
+      display: block
+      text-align: end
+
+    .message_body
+      border-radius: 0.5rem 0 0.5rem 0.5rem
+      background-color: variables.$emerald-400
