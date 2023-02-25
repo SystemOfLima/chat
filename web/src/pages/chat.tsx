@@ -1,9 +1,11 @@
 import { Grid } from "@mui/material";
 import { InputSender } from "../components/input-sender";
 import { Message } from "../components/message";
-import { messagesMock } from "../mock/messages";
+import { useMessages } from "../hooks/useMessages";
 
 export const Chat = () => {
+  const { variables } = useMessages();
+
   return (
     <Grid
       container
@@ -12,9 +14,9 @@ export const Chat = () => {
         backgroundColor: "#1A1924",
       }}
     >
-      <Grid item xs={12} height={`calc(100vh - 10rem)`}>
+      <Grid item xs={12} minHeight={`calc(100vh - 10rem)`}>
         <>
-          {messagesMock.map(({ name, body, createdAt }) => (
+          {variables?.states?.messages.map(({ name, body, createdAt }) => (
             <Message
               name={name}
               body={body}
